@@ -1,4 +1,2 @@
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/
-Expose 85
-CMD ["nginx","-g","daemon off;"]
+FROM hshar/webapp
+ADD . /var/www/html
